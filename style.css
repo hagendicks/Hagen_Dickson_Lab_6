@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
 
 :root {
-    --bg-color: #f4f1de;         /* Antique Cream */
-    --primary-dark: #2f3e46;     /* Dark Jungle Green */
-    --primary-light: #52796f;    /* Muted Sage */
-    --accent-gold: #e07a5f;      /* Terracotta/Gold Accent */
-    --text-main: #3d405b;        /* Charcoal */
+    --bg-color: #f4f1de;         
+    --primary-dark: #2f3e46;     
+    --primary-light: #52796f;   
+    --accent-gold: #e07a5f;      
+    --text-main: #3d405b;       
     --white: #ffffff;
     --shadow-soft: 0 10px 30px rgba(47, 62, 70, 0.1);
-    --shadow-hard: 4px 4px 0px rgba(47, 62, 70, 0.15); /* Retro/Nouveau depth */
+    --shadow-hard: 4px 4px 0px rgba(47, 62, 70, 0.15); 
     --radius-main: 12px;
 }
 
@@ -126,7 +126,7 @@ body.auth-page {
 .sidebar a:hover {
     background-color: rgba(255,255,255,0.05);
     color: var(--accent-gold);
-    padding-left: 25px; /* Slide effect */
+    padding-left: 25px;
 }
 
 
@@ -155,7 +155,7 @@ body.auth-page {
     flex: 1;
     padding: 50px;
     background-image: radial-gradient(#dce1de 1px, transparent 1px);
-    background-size: 20px 20px; /* Subtle dot pattern */
+    background-size: 20px 20px; 
 }
 
 input, select, textarea {
@@ -163,7 +163,7 @@ input, select, textarea {
     padding: 15px;
     margin: 10px 0 25px 0;
     border: none;
-    background-color: #eaddcf; /* Darker cream */
+    background-color: #eaddcf; 
     border-bottom: 2px solid transparent;
     border-radius: 4px 4px 0 0;
     font-family: 'Lato', sans-serif;
@@ -184,7 +184,7 @@ button {
     background-color: var(--primary-dark);
     color: var(--bg-color);
     border: none;
-    border-radius: 50px; /* Pill shape */
+    border-radius: 50px; 
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -205,7 +205,7 @@ button:hover {
     padding: 35px;
     margin-bottom: 40px;
     border-radius: var(--radius-main);
-    box-shadow: var(--shadow-hard); /* Unique hard shadow */
+    box-shadow: var(--shadow-hard); 
     border: 1px solid rgba(0,0,0,0.05);
 }
 
@@ -218,7 +218,7 @@ button:hover {
 table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0 10px; /* Spaced rows */
+    border-spacing: 0 10px; 
     margin-top: 10px;
 }
 
@@ -240,7 +240,6 @@ td {
     border-bottom: 1px solid rgba(0,0,0,0.02);
 }
 
-/* Rounded corners for table rows */
 tr td:first-child { border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
 tr td:last-child { border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
 
