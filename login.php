@@ -1,8 +1,8 @@
 <?php
 include 'db_connect.php';
-// ... (Keep the exact same PHP Logic from the previous response here) ...
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // ... (Paste the PHP logic from step 4 of the previous response) ...
+
     $email = $conn->real_escape_string($_POST['username']); 
     $password = $_POST['password'];
 
