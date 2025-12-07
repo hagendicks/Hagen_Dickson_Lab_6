@@ -9,14 +9,12 @@ if (!isset($_SESSION['user_id']) || ($_SESSION['role'] != 'Faculty' && $_SESSION
 $user_id = $_SESSION['user_id'];
 $message = "";
 
-// --- PHP LOGIC (Keep the same logic as previous response) ---
 if (isset($_POST['create_course'])) {
     $cName = $_POST['cName'];
     $cCode = $_POST['cCode'];
     $conn->query("INSERT INTO courses (course_name, course_code, created_by) VALUES ('$cName', '$cCode', '$user_id')");
     $message = "Course Created!";
 }
-// ... (Include the rest of the logic for assignments, grading, etc. here) ...
 if (isset($_POST['create_assignment'])) {
     $courseID = $_POST['course_id'];
     $title = $_POST['title'];
