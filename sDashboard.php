@@ -9,7 +9,6 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'Student') {
 $student_id = $_SESSION['user_id'];
 $message = "";
 
-// --- PHP LOGIC ---
 if (isset($_POST['submit_assignment'])) {
     $assignID = $_POST['assignment_id'];
     $target_dir = "uploads/";
