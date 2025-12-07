@@ -1,5 +1,5 @@
 <?php
-include 'db_connect.php'; // Ensure this path is correct
+include 'db_connect.php'; 
 
 $error = "";
 
@@ -10,22 +10,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $role = $conn->real_escape_string($_POST['role']);
     $password = $_POST['password']; 
     
-    // 1. Ashesi Domain Security Check
     if (!preg_match("/@ashesi\.edu\.gh$/", $email)) {
         $error = "Only @ashesi.edu.gh emails are allowed for registration.";
     } else {
-        // 2. Password Hashing
+
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
         $sql = "INSERT INTO users (first_name, last_name, email, password_hash, role) 
                 VALUES ('$fName', '$lName', '$email', '$hashed_password', '$role')";
 
         if ($conn->query($sql) === TRUE) {
-            // Success: Redirect to login
             header("Location: login.php");
             exit();
         } else {
-            // Error handling (e.g., email already exists)
             $error = "Registration failed. Email may already be in use.";
         }
     }
